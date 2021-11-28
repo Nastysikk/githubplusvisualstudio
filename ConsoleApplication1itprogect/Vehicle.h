@@ -9,18 +9,21 @@ private:
 	int pasagyry;
 	int speed;
 	float fuel; //максимальна к-сть палива,яку вміщує засіб
+	int run; //пробіг автомобіля
 public:
 	Vehicle()
 	{
 		pasagyry = 0;
 		speed = 0;
 		fuel = 0;
+		run = 0;
 	}
-	Vehicle(int p, int s, float f)
+	Vehicle(int p, int s, float f, int r)
 	{
 		pasagyry = p;
 		speed = s;
 		fuel = f;
+		run = r;
 	}
 
 	~Vehicle() {}
