@@ -10,6 +10,7 @@ private:
 	int speed;
 	float fuel; //максимальна к-сть палива,яку вміщує засіб
 	int run; //пробіг автомобіля
+	int t;
 public:
 	Vehicle()
 	{
@@ -17,6 +18,7 @@ public:
 		speed = 0;
 		fuel = 0;
 		run = 0;
+		
 	}
 	Vehicle(int p, int s, float f, int r)
 	{
