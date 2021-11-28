@@ -11,6 +11,10 @@ void Vehicle::setFuel(float f)
 {
 	fuel = f;
 }
+void Vehicle::setRun(int r)
+{
+	run = r;
+}
 
 int Vehicle::getPasagyry()
 {
@@ -23,6 +27,10 @@ int Vehicle::getSpeed()
 float Vehicle::getFuel()
 {
 	return fuel;
+}
+int Vehicle::getRun()
+{
+	return run;
 }
 string Vehicle::get_infa()
 {

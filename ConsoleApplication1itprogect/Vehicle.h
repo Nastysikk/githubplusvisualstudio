@@ -33,10 +33,12 @@ public:
 	void setPasagyry(int p);
 	void setSpeed(int s);
 	void setFuel(float f);
+	void setRun(int run);
 
 	int getPasagyry();
 	int getSpeed();
 	float getFuel();
+	int getRun();
 	string get_infa();
 	friend istream& operator>> (istream& in, Vehicle& temp)//перевантаження оператора  вводу,(зліва посилання на об'єкт класу istream,клас для якого хочемо перевантажити оператор)
 	{
