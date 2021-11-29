@@ -3,21 +3,24 @@
 class Plane : public Vehicle
 {
 private:
-	int engine;   //к-сть двигунів
-	int flightrange;  //дальність польоту
-	int lenrunway;  //потрібна довжина злітної смуги
+	int engine;			//к-сть двигунів
+	int flightrange;	//дальність польоту
+	int lenrunway;		//потрібна довжина злітної смуги
+	int engineThrust;   //тяга двигуна
 public:
 	Plane()
 	{
 		engine = 0;
 		flightrange = 0;
 		lenrunway = 0;
+		engineThrust = 0;
 	}
-	Plane(int e, int fr, int lr)
+	Plane(int e, int fr, int lr, int et)
 	{
 		engine = e;
 		flightrange = fr;
 		lenrunway = lr;
+		engineThrust = et;
 	}
 	~Plane() {}
 	void setEngine(int e);
