@@ -6,14 +6,17 @@ class Steamer : public Vehicle
 {
 private:
 	string type; //тип (вантажний чи пасажирський пароплав)
+	int mass;
 public:
 	Steamer()
 	{
 		type = "ѕусто";
+		mass = 0;
 	}
-	Steamer(string tp)
+	Steamer(string tp, int m)
 	{
 		type = tp;
+		mass = m;
 	}
 	~Steamer() {}
 	void setType(string tp);
